@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Playpen">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintGuide_percent="0.3"
+        android:orientation="horizontal"
+        android:id="@+id/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="true:"
+        android:id="@+id/tv_true"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/true_number"
+        android:fontFamily="monospace"
+        android:textColor="#00FF00"
+        app:layout_constraintStart_toEndOf="@id/tv_true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="false:"
+        android:textSize="24sp"
+        android:id="@+id/tv_false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_true"
+        android:layout_marginStart="32dp"
+        android:fontFamily="monospace"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/false_number"
+        android:textColor="#FF0800"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toEndOf="@id/tv_false"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="new game"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/btn_newgame"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonstyle"
+        android:layout_marginEnd="148dp"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:background="@drawable/buttonstyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="all answer"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/tv_answer"
+        android:textColor="#000000"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:onClick="Beginboshla"
+        android:id="@+id/btn_answer1"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="48dp"/>
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:onClick="Beginboshla"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_answer1"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/buttonstyle"
+            android:id="@+id/btn_answer2"
+            android:fontFamily="monospace"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:onClick="Beginboshla"
+        android:id="@+id/btn_answer3"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonstyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toBottomOf="@id/btn_answer2"
+        android:layout_marginTop="48dp"/>
+
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_answer3"
+        android:layout_marginTop="32dp"
+        android:id="@+id/chronoid"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
