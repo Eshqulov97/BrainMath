@@ -18,6 +18,8 @@ class PlayGame : AppCompatActivity() {
 
         }
 
+
+
         btn_exit.setOnClickListener {
             finish()
         }

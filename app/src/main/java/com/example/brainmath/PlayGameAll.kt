@@ -27,6 +27,7 @@ class PlayGameAll : AppCompatActivity() {
                 val one = Intent(this,Playpen::class.java)
                 one.putExtra("one",1)
                 startActivity(one)
+                finish()
             }
 
             if(level_2.isChecked){
@@ -34,18 +35,21 @@ class PlayGameAll : AppCompatActivity() {
                 val one = Intent(this,Playpen::class.java)
                 one.putExtra("one",2)
                 startActivity(one)
+                finish()
             }
             if(level_3.isChecked){
 
                 val one = Intent(this,Playpen::class.java)
                 one.putExtra("one",3)
                 startActivity(one)
+                finish()
             }
             if(level_4.isChecked){
 
                 val one = Intent(this,Playpen::class.java)
                 one.putExtra("one",4)
                 startActivity(one)
+                finish()
             }
 
             if(level_5.isChecked){
@@ -53,6 +57,7 @@ class PlayGameAll : AppCompatActivity() {
                 val one = Intent(this,Playpen::class.java)
                 one.putExtra("one",5)
                 startActivity(one)
+                finish()
             }
 
         }

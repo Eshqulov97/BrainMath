@@ -15,19 +15,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_setting"
-        />
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:id="@+id/btn_setting"
-        android:background="@drawable/ic_settings_black_24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_exit"
-        app:layout_constraintTop_toBottomOf="@id/btn_play"
         />
-
     <Button
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -35,6 +24,6 @@
         android:background="@drawable/ic_exit_to_app_black_24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_setting"
+        app:layout_constraintTop_toBottomOf="@id/btn_play"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
