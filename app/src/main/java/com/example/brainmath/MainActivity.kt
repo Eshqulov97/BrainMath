@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
                     val one = Intent(this,PlayGame::class.java)
                     startActivity(one)
+                    finish()
 
                 }
             }
